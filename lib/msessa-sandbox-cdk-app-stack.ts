@@ -6,7 +6,7 @@ export class MsessaSandboxCdkAppStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
-    new s3.Bucket(scope, 'Bucket')
+    new s3.Bucket(this, 'Bucket')
 
   }
 }
